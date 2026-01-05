@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Great Mill Race</title>
+  <meta name="description" content="The Great Mill Race — 5K & 1.5 Mile road race." />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Mobile drawer overlay -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <!-- Mobile drawer -->
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Mobile menu">
+    <div class="drawer__header">
+      <span class="drawer__title">Menu</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Close menu">✕</button>
+    </div>
+
+    <nav class="drawer__nav">
+      <a href="#home" class="drawer__link">Home</a>
+      <a href="#race-info" class="drawer__link">Race Info</a>
+      <a href="#register" class="drawer__link drawer__link--cta">Register</a>
+      <a href="#volunteer" class="drawer__link">Volunteer</a>
+      <a href="#after-race" class="drawer__link">After Race</a>
+      <a href="#contact" class="drawer__link">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Top header -->
+  <header class="site-header" id="home">
+    <div class="wrap header__inner">
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="drawer" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+
+      <div class="brand">
+        <span class="brand__name">The Great Mill Race</span>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="nav">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#race-info" class="nav__link">Race Info</a>
+        <a href="#register" class="nav__link nav__link--cta">Register</a>
+        <a href="#volunteer" class="nav__link">Volunteer</a>
+        <a href="#after-race" class="nav__link">After Race</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__side hero__side--left">
+          <h1 class="hero__title">The Great Mill Race</h1>
+          <p class="hero__subtitle">A classic road race through the park—historic mills, lakes, and fast miles.</p>
+          <div class="hero__buttons">
+            <a class="btn btn--primary" href="#register">Register</a>
+            <a class="btn btn--ghost" href="#race-info">Race Info</a>
+          </div>
+        </div>
+
+        <div class="hero__logo" aria-label="Race logo">
+          <!-- Replace src with your final transparent PNG -->
+          <img src="img/logo.png" alt="The Great Mill Race logo" />
+        </div>
+
+        <div class="hero__side hero__side--right">
+          <div class="hero__pill">5K &amp; 1.5 Mile</div>
+          <ul class="hero__bullets">
+            <li>Family-friendly 1.5 mile option</li>
+            <li>Fast, scenic 5K course</li>
+            <li>Swag, medals, and post-race fun</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section" id="race-info">
+      <div class="wrap two-col">
+        <div class="two-col__media">
+          <!-- Replace with a real course/photo image -->
+          <img src="img/intro.jpg" alt="Park and course scenery" />
+        </div>
+        <div class="two-col__text">
+          <h2>Race Info</h2>
+          <p>
+            The Great Mill Race is a community road race set in a beautiful park setting,
+            featuring iconic historic buildings and lakes along the way. Choose the 5K for a
+            classic run or the 1.5 Mile for a shorter option.
+          </p>
+          <p>
+            We’ll publish the official course map, schedule, and parking details here as we finalize logistics.
+          </p>
+
+          <div class="info-cards">
+            <div class="card">
+              <h3>Distances</h3>
+              <p>5K (3.11 miles) + 1.5 Mile</p>
+            </div>
+            <div class="card">
+              <h3>Location</h3>
+              <p>Park course near the historic mills</p>
+            </div>
+            <div class="card">
+              <h3>Race Day</h3>
+              <p>Details coming soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SWAG -->
+    <section class="section section--alt" id="after-race">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Race Swag</h2>
+          <p>Shirt + finisher medals. (We’ll drop real photos here once ready.)</p>
+        </div>
+
+        <div class="swag-grid">
+          <div class="swag-item">
+            <img src="img/shirt.jpg" alt="Race t-shirt" />
+            <h3>T-Shirt</h3>
+            <p>Comfortable race shirt featuring the Great Mill Race logo.</p>
+          </div>
+          <div class="swag-item">
+            <img src="img/medal.jpg" alt="Race medal" />
+            <h3>Medal</h3>
+            <p>Finisher medal for both distances.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN RIBBON -->
+    <section class="countdown" aria-label="Countdown to race day">
+      <div class="wrap countdown__inner">
+        <div class="countdown__label">Race Day Countdown</div>
+        <div class="countdown__time" id="countdownTime">Set a race date in script.js</div>
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+    <section class="section" id="volunteer">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Sponsors</h2>
+          <p>Thank you to the sponsors who make this event possible.</p>
+        </div>
+
+        <div class="sponsor-grid">
+          <div class="sponsor">Sponsor Logo</div>
+          <div class="sponsor">Sponsor Logo</div>
+          <div class="sponsor">Sponsor Logo</div>
+          <div class="sponsor">Sponsor Logo</div>
+        </div>
+
+        <div class="cta-band" id="register">
+          <div class="cta-band__text">
+            <h3>Ready to run?</h3>
+            <p>Registration opens soon. Volunteer opportunities also available.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--primary" href="#contact">Get Updates</a>
+            <a class="btn btn--ghost" href="#volunteer">Volunteer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="wrap contact">
+        <div class="contact__text">
+          <h2>Contact</h2>
+          <p>Questions about registration, volunteering, or sponsorship? Reach out.</p>
+          <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+
+        <form class="contact__form" onsubmit="return false;">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea rows="4" placeholder="How can we help?"></textarea>
+          </label>
+          <button class="btn btn--primary" type="button">Send (wire this later)</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>© <span id="year"></span> The Great Mill Race</div>
+      <div class="footer__links">
+        <a href="#race-info">Race Info</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
