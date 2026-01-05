@@ -4,8 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Great Mill Race</title>
-  <meta name="description" content="The Great Mill Race — 5K & 1.5 Mile road race between two historic Henry Ford mill buildings." />
-  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- FORCE-VISIBLE DEBUG: if you don't see a green border, you are not viewing this file -->
+  <style>
+    body { border: 12px solid #2f5a3f !important; }
+  </style>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css?v=99">
 </head>
 
 <body>
@@ -65,7 +71,7 @@
         </div>
 
         <div class="hero__logo">
-          <img src="img/logo.png" alt="The Great Mill Race logo" />
+          <img src="./img/logo.png" alt="The Great Mill Race logo" />
         </div>
 
         <div class="hero__side">
@@ -77,10 +83,10 @@
       </div>
     </section>
 
-    <section class="section" aria-label="Intro section">
+    <section class="section">
       <div class="wrap two-col">
         <div class="two-col__media">
-          <img src="img/intro.jpg" alt="Park pathway and scenery" />
+          <img src="./img/intro.jpg" alt="Park pathway and scenery" />
         </div>
         <div class="two-col__text">
           <h2>Welcome</h2>
@@ -88,75 +94,19 @@
             The Great Mill Race is a family-friendly event set in a beautiful park environment.
             Choose the 5K for a classic run or the 1.5 Mile option for a shorter route.
           </p>
-          <p>
-            We’ll publish course maps, schedule, parking, and packet pickup details on the Race Info page.
-          </p>
           <a class="btn btn--primary" href="race-info.html">View Race Info</a>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" aria-label="Swag section">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Race Swag</h2>
-          <p>T-shirt and medals (photos coming soon).</p>
-        </div>
-        <div class="grid-2">
-          <div class="card">
-            <img src="img/shirt.jpg" alt="Race t-shirt" style="border-radius:16px;border:1px solid var(--line);margin-bottom:0.8rem;">
-            <h3 style="margin:0 0 0.25rem;">T-Shirt</h3>
-            <p style="margin:0;color:var(--muted);">Comfortable race shirt featuring the Great Mill Race logo.</p>
-          </div>
-          <div class="card">
-            <img src="img/medal.jpg" alt="Race medal" style="border-radius:16px;border:1px solid var(--line);margin-bottom:0.8rem;">
-            <h3 style="margin:0 0 0.25rem;">Medal</h3>
-            <p style="margin:0;color:var(--muted);">Finisher medal for both distances.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="countdown" aria-label="Countdown ribbon">
+    <section class="countdown">
       <div class="wrap countdown__inner">
         <div class="countdown__label">Race Day Countdown</div>
-        <div class="countdown__time" id="countdownTime">Set race date in site.js</div>
-      </div>
-    </section>
-
-    <section class="section" aria-label="Sponsors">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Sponsors</h2>
-          <p>Thank you to the sponsors who make this event possible.</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card" style="min-height:90px;display:grid;place-items:center;color:var(--muted);font-weight:800;">Sponsor Logo</div>
-          <div class="card" style="min-height:90px;display:grid;place-items:center;color:var(--muted);font-weight:800;">Sponsor Logo</div>
-        </div>
-
-        <div style="margin-top:1rem;">
-          <a class="btn btn--primary" href="volunteer-donate.html">Volunteer / Donate</a>
-        </div>
+        <div class="countdown__time" id="countdownTime">Loading…</div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <div>© <span id="year"></span> The Great Mill Race</div>
-      <div>
-        <a href="race-info.html">Race Info</a>
-        <span style="opacity:0.5;margin:0 0.5rem;">•</span>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-  <script src="./js/site.js"></script>
+  <script src="./js/site.js?v=99"></script>
 </body>
 </html>
