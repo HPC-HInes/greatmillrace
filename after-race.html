@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>After Race — The Great Mill Race</title>
+
+  <!-- If you don't see a GREEN border, you're not viewing the latest index.html -->
+  <style>
+    body { border: 10px solid #2f5a3f !important; }
+  </style>
+
+  <link rel="stylesheet" href="./css/styles.css?v=1" />
+</head>
+
+<body>
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Mobile menu">
+    <div class="drawer__header">
+      <span class="drawer__title">Menu</span>
+      <button class="drawer__close" id="drawerClose" aria-label="Close menu">✕</button>
+    </div>
+    <nav class="drawer__nav">
+      <a href="./index.html" class="drawer__link">Home</a>
+      <a href="./race-info.html" class="drawer__link">Race Info</a>
+      <a href="./register.html" class="drawer__link drawer__link--cta">Register</a>
+      <a href="./volunteer-donate.html" class="drawer__link">Volunteer / Donate</a>
+      <a href="./after-race.html" class="drawer__link">After Race</a>
+      <a href="./contact.html" class="drawer__link">Contact</a>
+    </nav>
+  </aside>
+
+  <header class="site-header">
+    <div class="wrap header__inner">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="drawer" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">The Great Mill Race</span>
+      </div>
+
+      <nav class="nav">
+        <a href="./index.html" class="nav__link">Home</a>
+        <a href="./race-info.html" class="nav__link">Race Info</a>
+        <a href="./register.html" class="nav__link nav__link--cta">Register</a>
+        <a href="./volunteer-donate.html" class="nav__link">Volunteer / Donate</a>
+        <a href="./after-race.html" class="nav__link">After Race</a>
+        <a href="./contact.html" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main><section class="section"><div class="wrap"><h1>After Race</h1><p>Placeholder page.</p><p><a class="btn btn--primary" href="./index.html">Back Home</a></p></div></section></main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>© <span id="year"></span> The Great Mill Race</div>
+      <div class="footer__links">
+        <a href="./race-info.html">Race Info</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="./js/site.js?v=1"></script>
+</body>
+</html>
